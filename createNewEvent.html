@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" type="image/jpg" sizes="16*16" href="/images/cubeSmall.png">
+    <script src="/scripts/jquery.min.js"></script>
+    <script src="/scripts/main.js"></script>
+    <title>Create New Event</title>
+</head>
+<body class="body">
+    <header class="headerContainer">
+        <div class="container">
+            <h1 id="cubeEvent"><a href="index.html">Cube Events</a></h1>
+            <div id="backgroundImage">
+            </div>  
+        </div>
+    </header>
+    <nav class="globNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="allEvents.html">All Events</a></li>
+            <li><a href="createNewEvent.html">Create New Event</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <img id="smallCubeImg" alt="small cube" src="/images/cubeSmall.png">
+    </nav>
+    
+    <main class="main">
+        <div>
+            <h1 class="pageHeader">Create New Event</h1>
+        </div>
+        <div>
+            <form class="newEventForm">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="eventName">Event name:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="eventName" name="eventName" placeholder="New event name..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="date">Date:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="date" name="date" placeholder="Date..">
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-25">
+                        <label for="description">Description:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="description" name="description" placeholder="Short description.." rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="agenda">Agenda:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="agenda" name="agenda" placeholder="Agenda.." rows="10"></textarea>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label for="images">Add Images:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="file" id="images" name="images">
+                        <input type="file" id="images" name="images">
+                        <input type="file" id="images" name="images">
+                        <input type="file" id="images" name="images">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                        <label for="category">Category:</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="category" name="category">
+                        <option value="music">Music</option>
+                        <option value="activity">Activity</option>
+                        <option value="dance">Dance</option>
+                        <option value="entertainment">Entertainment</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <input class="btn-createNewEvent" type="button" value="Submit New Event">
+                </div>
+                <div class="row">
+                    <input class="clearNewEvent" type="reset" value="Clear form">
+                </div>
+              </form>
+        </div>
+    </main>
+    <footer id="footer">
+        <div>
+            <a href="https://twitter.com/?lang=sv" target="_blank"><i class="fa fa-twitter"></i> </a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://sv-se.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <br>
+            <a href="about.html#contactCubeEvents">Contact Cube Events</a>
+        </div>
+        <p>&copy; 2021 Cube Events AB</p>
+    </footer>
+</body>
+</html>

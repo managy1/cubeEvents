@@ -1,0 +1,234 @@
+@import 'variables';
+@import 'buttons';
+@import 'cards';
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: $primary-font;
+}
+body {
+    background-color: $light-color;
+    font-family: $secondary-font;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: $flickrPink-color;
+}
+a:hover{
+    color: $purple-color;;
+} 
+.globNav {
+    display: flex;
+    flex-direction: column;
+    
+    ul{
+        list-style-type: none;
+        margin: 0px ;
+        padding: 20px 0px 0px 30px;
+        min-width: 250px;
+        li{
+            margin: 20px 10px 10px 10px;
+            a{
+                text-decoration: none;
+                display: block;
+                font-size: 20px;
+                color: $flickrPink-color;
+            }
+        }
+    }
+}
+#smallCubeImg{
+    width: 50%;
+    margin-left: 20px;
+}
+#cubeEvent{
+    text-align: left;
+    font-size: 50px;
+    padding: 20px 0px 20px 40px;
+    color: $flickrPink-color;
+    h1{
+        color: $flickrPink-color;
+        a{
+            color: $flickrPink-color;
+        }
+    }   
+}
+
+.headerContainer{
+    color: $flickrPink-color;
+    .container{
+        margin: 0px;
+        padding: 0px;
+        #backgroundImage{
+            // background: url("https://images.unsplash.com/photo-1634244106844-107aa05a2df0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1120&q=80");
+            background-image: url("/images/cube.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 550px;
+            position: relative;  
+        }
+    }
+}
+
+.main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.aboutUsPage{
+    h2{
+        margin-top: 15px;
+    }
+    p{
+        max-width: 60%;
+    }
+    .directorContainer{
+        p{
+            max-width: 100%;
+        }
+    }
+    .directorImg{
+        max-width: 250px;
+        float: left;
+    }
+    .directorContainer{
+        overflow: auto;
+        margin-top: 40px;
+        p{
+            width: 1000px;
+            margin: 10px 0px 0px 280px;
+        }
+        h2{
+            width: 1000px;
+            margin: 10px 0px 0px 280px;
+        }
+    }
+    #groupImg{
+        max-width: 900px;
+        margin: 0px 0px 40px 0px;
+        h2{
+            margin-top: 50px;
+        }
+    }
+    .contactForm{
+        input[type=text], [type=email], textarea, [type=button]{
+            width: 100%;
+            box-sizing: border-box;
+            resize: vertical;
+            padding: 5px;
+        } 
+        label{
+            display: inline-block;
+        }
+        .col-25{
+            float: left;
+            width: 25%;
+            padding-top: 20px;
+        }
+        .col-75{
+            float: left;
+            width: 75%;
+            padding-top: 20px;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        fieldset{
+            box-shadow: 0 4px 8px 0;
+            padding: 60px 100px 80px 100px;
+            max-width: 85%;
+            border: none;
+            legend{
+                padding: 15px 0px 0px 0px;
+
+            }
+        }
+    }
+    
+}
+
+.newEventForm{
+    font-size: 18px;
+    input[type=text], [type=email], textarea, [type=button]{
+        width: 100%;
+        box-sizing: border-box;
+        resize: vertical;
+        padding: 8px;
+    } 
+    label{
+        display: inline-block;
+    }
+    .col-25{
+        float: left;
+        width: 25%;
+        padding-top: 20px;
+    }
+    .col-75{
+        float: left;
+        width: 75%;
+        padding-top: 20px;
+    }
+    .row:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+}
+
+
+.detailImages{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    img{
+        width: 20%;
+        transition: transform .3s;
+    }
+    img:hover{
+        transform: scale(1.20);
+    }
+}
+.detailPage{
+    p{
+        max-width: 50%;
+    }
+    h2{
+        margin-top: 20px;
+    }
+}
+#footer{
+    margin-top: 140px;
+    min-height: 100px;
+    padding: 30px 0;
+    background-color: $trypanBlue-color;
+    text-align: center;
+    width: 100%;
+    a{
+        color: $flickrPink-color;
+        font-size: 22px;
+        margin: 15px 15px;
+    }
+    a:hover{
+        color: $purple-color;;
+    } 
+    p{
+        color: $purple-color;
+        margin-top: 20px;
+    }
+}
+
+

@@ -1,0 +1,46 @@
+$light-color: #e4e1e1;
+$dark-color: #504f4f;
+$primary-color: #fcf9f9;
+$secondary-color: #6ce2bf;
+$flickrPink-color: #F72585;
+$purple-color: #7209B7;
+$trypanBlue-color: #3A0CA3;
+$ultramarineBlue: #4361EE;
+$vividSkyBlue: #4CC9F0;
+
+$primary-font: 'Orbitron', cursive;
+$secondary-font: Mitr, sans-serif;
+$third-font: 'Bungee', cursive;;
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Mitr:wght@300&family=Orbitron:wght@500&display=swap');
+
+.pageHeader{
+    text-align: center;
+    padding: 40px 20px;
+    margin: 60px 0px;
+    font-size: 60px;
+}
+ul{
+    list-style-type: none;
+}
+
+.footer{
+    width: 100%;
+}
+// grid Layout: 
+.headerContainer{grid-area: header;}
+.globNav        {grid-area: nav;}
+.main           {grid-area: main;}
+#footer         {grid-area: footer;}
+
+.body{
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'nav    main    main    main'
+    'nav    main    main    main'
+    'nav    main    main    main'
+    'footer footer  footer  footer'   
+    ;
+}
+

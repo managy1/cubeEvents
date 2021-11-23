@@ -1,0 +1,62 @@
+%btn {
+    border-radius: 5px;
+    display: block;
+    padding: 2px;
+    margin: 2px;
+    box-shadow: 0 3px 8px 0;
+
+    &:hover{
+        transform: scale(0.95);
+        color: $purple-color;
+    }
+}
+
+.btn-primary{
+    @extend %btn;
+    background-color: $primary-color;
+}
+.btn-secondary{
+    @extend %btn;
+    background-color: lighten($dark-color, 30%);
+}
+.btn-contact{
+    @extend %btn;
+    max-width: 75%;
+    float: right;
+    height: 35px;
+    font-size: 18px;
+}
+.btn-createNewEvent{
+    @extend %btn;
+    max-width: 75%;
+    float: right;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.clearNewEvent{
+    @extend %btn;
+    max-width: 75%;
+    float: right;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+// .btn-showMoreInfo{
+
+#more1, #more2, #more3, #more4, #more5, #more6, #more7, #more8, #more9, #more9, #more10 {
+    display: none;
+}
+
+.btn-showMoreInfo1, .btn-showMoreInfo2, .btn-showMoreInfo3, .btn-showMoreInfo4, .btn-showMoreInfo5, .btn-showMoreInfo6, .btn-showMoreInfo7, .btn-showMoreInfo8, .btn-showMoreInfo9, .btn-showMoreInfo10{
+    border-radius: 5px;
+    display: block;
+    padding: 2px;
+    margin: 3px 0px 0px 0px;
+    box-shadow: 0px 0px 3px 0px;
+    font-size: 16px;
+
+    &:hover{
+        // transform: scale(0.99);
+        color: $purple-color;
+    }
+}

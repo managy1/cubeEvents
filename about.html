@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" type="image/jpg" sizes="16*16" href="/images/cubeSmall.png">
+    <script src="/scripts/jquery.min.js"></script>
+    <script src="/scripts/main.js"></script>
+    <title>About Us</title>
+</head>
+<body class="body">
+    <header class="headerContainer">
+        <div class="container">
+            <h1 id="cubeEvent"><a href="index.html">Cube Events</a></h1>
+            <div id="backgroundImage">
+            </div>  
+        </div>
+    </header>
+    <nav class="globNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="allEvents.html">All Events</a></li>
+            <li><a href="createNewEvent.html">Create New Event</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <img id="smallCubeImg" alt="small cube" src="/images/cubeSmall.png">
+    </nav>
+    
+    <main class="main">
+        <div>
+            <h1 class="pageHeader">About Us</h1>
+        </div>
+        <div class="aboutUsPage">
+            <div>
+                <h2>Cube Events</h2>
+                <p>Today Cube Events are a leading event lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quibusdam tempora corporis in accusamus consequatur! Quis, eaque fugit minus facilis sequi ad id! Porro mollitia voluptates optio cupiditate sint sequi?</p>
+            </div>
+            <div>
+                <h2>The Dream Team</h2>
+                <p>Our amazing team orem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, rerum, exercitationem numquam debitis ex error ratione fugiat perspiciatis autem dignissimos obcaecati nostrum distinctio modi, asperiores nisi inventore amet porro. Mollitia.</p>
+            </div>
+            <div>
+                <h2>Deputy Director</h2>
+                <p>It all started with a vision about an easy way to acces event lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores animi fuga neque. Deserunt vitae suscipit quas numquam magni tempore animi error minus. Distinctio officiis facilis a nesciunt ipsum pariatur tenetur!</p>
+            </div>
+            <div class="directorContainer">
+                <img class="directorImg" 
+                alt="Deputy director at cube event." 
+                src="https://images.unsplash.com/photo-1620473209041-9a5df851abb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=885&q=80">
+                <div class="directorContact">
+                    <h2>Firstname Lastname</h2>
+                    <p>Call me: <a href="tel:+46703123456">+46 703123456</a></p>
+                    <p>E-mail me:<a href="mailto:director@cubeevent.com"> director@cubeevent.com</a> </p>
+                </div>
+            </div>
+            <div id="groupImg">
+                <h2>The team</h2>
+                <img alt="The team at cube events." id="groupImg" src="images/theTeam.jpg">
+            </div>
+            
+            
+            <form class="contactForm" name="contactForm">
+                <div id="contactCubeEvents"></div>
+                <fieldset>
+                    <legend><h2>Contact Us</h2></legend>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Name:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" placeholder="Name.." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="mail">Mail:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="mail" name="mail" placeholder="Mail.." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="message">Message:</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="message" name="message" placeholder="Message.." rows="5" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input class="btn-contact" type="button" value="Submit">    
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+    </main>
+    <footer id="footer">
+        <div>
+            <a href="https://twitter.com/?lang=sv" target="_blank"><i class="fa fa-twitter"></i> </a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://sv-se.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <br>
+            <a href="#">Contact Cube Events</a>
+        </div>
+        <p>&copy; 2021 Cube Events AB</p>
+    </footer>
+</body>
+</html>
