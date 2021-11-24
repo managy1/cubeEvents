@@ -7,6 +7,22 @@ $(document).ready(function() {
         $(".contactForm").replaceWith("<h2>Thank you for your message! <br>We will get back to you as soon as possible.</h2>");
     })
 })
+//  // för alla knappar att visa mera info
+// $(document).ready(function() {
+//     $('.btn-showMoreInfo').click(function () {     
+//         $(this).nextSibling.toggle();
+//         console.log($(this))
+//     });
+//     $('.btn-showMoreInfo').click(function(){
+//         $(this).next('.more').toggle('slow');
+//         console.log($(this));
+//     });
+    
+//     $(".btn-showMoreInfo").click(function() {
+//         $(this).nextItem.toggle(); 
+//         console.log($(this))
+//     });
+// })
 
 
 // Event Cards
